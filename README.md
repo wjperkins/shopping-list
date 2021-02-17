@@ -1,6 +1,6 @@
 # shopping-list
 
-A simple to-do app built using `@vue/cli`, which stores data in the browser's localStorage to emulate a database connection.
+A simple shopping list app built using `@vue/cli`, which stores data in the browser's localStorage to emulate a database connection.
 
 ## Project setup
 

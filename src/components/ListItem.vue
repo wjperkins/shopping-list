@@ -3,12 +3,12 @@
     <input
       type="checkbox"
       :checked="item.completed"
-      @input="toggleCompletedTodo"
+      @input="toggleCompletedItem()"
     />
     <div :class="{ completed: item.completed }">
       {{item.value}}
     </div>
-    <button @click="deleteTodo" class="delete-btn">
+    <button @click="deleteItem()" class="delete-btn">
       Delete
     </button>
   </div>
@@ -16,16 +16,16 @@
 
 <script>
 export default {
-  name: 'ToDoItem',
+  name: 'ListItem',
   props: {
     item: { value: String, completed: Boolean }
   },
   emits: ['delete', 'toggleComplete'],
   methods: {
-    deleteTodo() {
+    deleteItem() {
       this.$emit('delete')
     },
-    toggleCompletedTodo() {
+    toggleCompletedItem() {
       this.$emit('toggleComplete')
     }
   }

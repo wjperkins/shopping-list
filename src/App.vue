@@ -1,14 +1,14 @@
 <template>
-  <ToDoList />
+  <ShoppingList />
 </template>
 
 <script>
-import ToDoList from './components/ToDoList';
+import ShoppingList from './components/ShoppingList';
 
 export default {
   name: 'App',
   components: {
-    ToDoList
+    ShoppingList
   }
 }
 </script>
