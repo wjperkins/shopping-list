@@ -71,6 +71,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 400px;
   }
   .item-input {
     padding: 10px;
@@ -78,8 +79,13 @@ export default {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-    width: 400px;
+    width: calc(100% - 20px);
     color: #2e3440;
     background: #d8dee9;
+  }
+  @media screen and (max-width: 500px) {
+    .item-input {
+      width: 300px;
+    }
   }
 </style>

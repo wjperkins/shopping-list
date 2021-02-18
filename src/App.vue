@@ -21,6 +21,8 @@ export default {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
 }
 body {
   margin: 0px;

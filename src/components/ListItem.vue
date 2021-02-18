@@ -39,7 +39,7 @@ export default {
     background: #88c0d0;
     padding: 10px;
     margin: 10px;
-    width: 400px;
+    width: calc(100% - 20px);
     border-radius: 5px;
     word-break: break-all;
     display: flex;
@@ -58,5 +58,10 @@ export default {
     flex-shrink: 0;
     margin-left: 5px;
     padding: 5px;
+  }
+  @media screen and (max-width: 500px) {
+    .item {
+      width: 300px;
+    }
   }
 </style>
