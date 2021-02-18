@@ -84,6 +84,9 @@ export default {
     background: #d8dee9;
   }
   @media screen and (max-width: 500px) {
+    .shopping-list {
+      width: unset;
+    }
     .item-input {
       width: 300px;
     }

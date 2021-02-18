@@ -1,5 +1,7 @@
 <template>
-  <ShoppingList />
+  <div class="root">
+    <ShoppingList />
+  </div>
 </template>
 
 <script>
@@ -14,7 +16,7 @@ export default {
 </script>
 
 <style>
-#app {
+.root {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,5 +29,11 @@ export default {
 body {
   margin: 0px;
   background: #2e3440;
+}
+@media screen and (max-height: 800px) {
+  .root {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 </style>
