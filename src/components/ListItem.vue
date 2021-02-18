@@ -1,14 +1,9 @@
 <template>
-  <div class="item">
-    <input
-      type="checkbox"
-      :checked="item.completed"
-      @input="toggleCompletedItem()"
-    />
+  <div class="item" @click="toggleCompletedItem()">
     <div :class="{ completed: item.completed }">
       {{item.value}}
     </div>
-    <button @click="deleteItem()" class="delete-btn">
+    <button @click.stop="deleteItem()" class="delete-btn">
       Delete
     </button>
   </div>
@@ -45,6 +40,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
   }
   .item .completed {
     text-decoration: line-through;
