@@ -35,7 +35,7 @@ export default {
   methods: {
     addItem() {
       if(this.newItem.value.trim()) { 
-        this.items.unshift(this.newItem);
+        this.items.push(this.newItem);
         this.newItem = { ...blankItem };
         this.saveItems();
       }
